@@ -1,0 +1,4 @@
+bridge14: map 2561516 pts extent [-100. -102.   -1.]..[100. 100.  36.]
+GT robot poses: 894; distance to nearest map obstacle point: median 2.5 m, share < 0.5 m: 0.0%, share < 1.0 m: 0.0%
+62 footprints from SDF; map points (z 2-8 m) inside a footprint (+1 m): 99.0%
+best 2D shift of the map onto the SDF buildings: dx=0 dy=0 (share inside 99.0%)

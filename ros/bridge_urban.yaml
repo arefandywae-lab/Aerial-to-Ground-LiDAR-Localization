@@ -1,0 +1,13 @@
+# Urban world (series B): drone with LiDAR+camera+IMU, ground robot with camera only. Per-model stamped GT (PosePublisher); no world-level pose topic.
+# Topic names follow gz defaults for the sensors declared in worlds/gen_urban.py; verify with `gz topic -l` on the first run (C-smoke).
+- {ros_topic_name: /clock, gz_topic_name: /clock, ros_type_name: rosgraph_msgs/msg/Clock, gz_type_name: gz.msgs.Clock, direction: GZ_TO_ROS}
+- {ros_topic_name: /drone/lidar/points, gz_topic_name: /drone/lidar/points, ros_type_name: sensor_msgs/msg/PointCloud2, gz_type_name: gz.msgs.PointCloudPacked, direction: GZ_TO_ROS}
+- {ros_topic_name: /drone/imu, gz_topic_name: /drone/imu, ros_type_name: sensor_msgs/msg/Imu, gz_type_name: gz.msgs.IMU, direction: GZ_TO_ROS}
+- {ros_topic_name: /drone/camera/image_raw, gz_topic_name: /drone/camera, ros_type_name: sensor_msgs/msg/Image, gz_type_name: gz.msgs.Image, direction: GZ_TO_ROS}
+- {ros_topic_name: /drone/camera/camera_info, gz_topic_name: /drone/camera_info, ros_type_name: sensor_msgs/msg/CameraInfo, gz_type_name: gz.msgs.CameraInfo, direction: GZ_TO_ROS}
+- {ros_topic_name: /ground/camera/image_raw, gz_topic_name: /camera, ros_type_name: sensor_msgs/msg/Image, gz_type_name: gz.msgs.Image, direction: GZ_TO_ROS}
+- {ros_topic_name: /ground/camera/camera_info, gz_topic_name: /camera_info, ros_type_name: sensor_msgs/msg/CameraInfo, gz_type_name: gz.msgs.CameraInfo, direction: GZ_TO_ROS}
+- {ros_topic_name: /gt/drone, gz_topic_name: /model/drone/pose, ros_type_name: tf2_msgs/msg/TFMessage, gz_type_name: gz.msgs.Pose_V, direction: GZ_TO_ROS}
+- {ros_topic_name: /gt/ground, gz_topic_name: /model/robot/pose, ros_type_name: tf2_msgs/msg/TFMessage, gz_type_name: gz.msgs.Pose_V, direction: GZ_TO_ROS}
+- {ros_topic_name: /cmd_vel, gz_topic_name: /cmd_vel, ros_type_name: geometry_msgs/msg/Twist, gz_type_name: gz.msgs.Twist, direction: ROS_TO_GZ}
+- {ros_topic_name: /drone/cmd_vel, gz_topic_name: /model/drone/cmd_vel, ros_type_name: geometry_msgs/msg/Twist, gz_type_name: gz.msgs.Twist, direction: ROS_TO_GZ}

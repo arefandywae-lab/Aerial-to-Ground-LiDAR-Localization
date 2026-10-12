@@ -1,0 +1,1 @@
+poses=2300 path=1870.3m  ATE rmse=3.033m max=18.457m (trimmed fit: 2198/2300 poses used, rmse on those 0.046m, max 0.401m)  RPE(10%) mean=0.708m  drift=0.00% of path

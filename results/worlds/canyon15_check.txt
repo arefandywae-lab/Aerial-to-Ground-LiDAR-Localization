@@ -1,0 +1,4 @@
+canyon15: map 2598059 pts extent [-100. -100.   -0.]..[100.  99.  59.]
+GT robot poses: 892; distance to nearest map obstacle point: median 3.4 m, share < 0.5 m: 0.0%, share < 1.0 m: 0.0%
+44 footprints from SDF; map points (z 2-8 m) inside a footprint (+1 m): 100.0%
+best 2D shift of the map onto the SDF buildings: dx=0 dy=0 (share inside 100.0%)

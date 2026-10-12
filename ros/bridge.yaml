@@ -1,0 +1,9 @@
+- {ros_topic_name: /clock, gz_topic_name: /clock, ros_type_name: rosgraph_msgs/msg/Clock, gz_type_name: gz.msgs.Clock, direction: GZ_TO_ROS}
+- {ros_topic_name: /lidar/points, gz_topic_name: /lidar/points, ros_type_name: sensor_msgs/msg/PointCloud2, gz_type_name: gz.msgs.PointCloudPacked, direction: GZ_TO_ROS}
+- {ros_topic_name: /imu, gz_topic_name: /imu, ros_type_name: sensor_msgs/msg/Imu, gz_type_name: gz.msgs.IMU, direction: GZ_TO_ROS}
+- {ros_topic_name: /camera/image_raw, gz_topic_name: /camera, ros_type_name: sensor_msgs/msg/Image, gz_type_name: gz.msgs.Image, direction: GZ_TO_ROS}
+- {ros_topic_name: /camera/camera_info, gz_topic_name: /camera_info, ros_type_name: sensor_msgs/msg/CameraInfo, gz_type_name: gz.msgs.CameraInfo, direction: GZ_TO_ROS}
+- {ros_topic_name: /gt/poses, gz_topic_name: /world/room/dynamic_pose/info, ros_type_name: tf2_msgs/msg/TFMessage, gz_type_name: gz.msgs.Pose_V, direction: GZ_TO_ROS}
+- {ros_topic_name: /cmd_vel, gz_topic_name: /cmd_vel, ros_type_name: geometry_msgs/msg/Twist, gz_type_name: gz.msgs.Twist, direction: ROS_TO_GZ}
+# GT with per-pose sim-time stamps + frame names (PosePublisher). /gt/poses (scene broadcaster) loses its stamp in the Pose_V->TFMessage conversion; kept only for drive_waypoints.py
+- {ros_topic_name: /gt/model, gz_topic_name: /model/robot/pose, ros_type_name: tf2_msgs/msg/TFMessage, gz_type_name: gz.msgs.Pose_V, direction: GZ_TO_ROS}

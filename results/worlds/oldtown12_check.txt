@@ -1,0 +1,4 @@
+oldtown12: map 1872330 pts extent [-100. -100.   -1.]..[116. 115.  21.]
+GT robot poses: 904; distance to nearest map obstacle point: median 2.8 m, share < 0.5 m: 1.9%, share < 1.0 m: 4.1%
+27 footprints from SDF; map points (z 2-8 m) inside a footprint (+1 m): 95.3%
+best 2D shift of the map onto the SDF buildings: dx=0 dy=0 (share inside 95.3%)

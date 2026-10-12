@@ -1,0 +1,1 @@
+poses=1016 path=78.7m  ATE rmse=0.026m max=0.056m  RPE(10%) mean=0.017m  drift=0.05% of path

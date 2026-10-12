@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <world name="urban">
+    <physics type="ignored"><max_step_size>0.004</max_step_size><real_time_factor>1.0</real_time_factor></physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors"><render_engine>ogre2</render_engine></plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <scene><ambient>0.40 0.40 0.40 1</ambient></scene>
+    <light type="directional" name="sun"><cast_shadows>true</cast_shadows>
+      <diffuse>0.80 0.80 0.80 1</diffuse><direction>-0.5 0.3 -0.9</direction></light>
+    <model name="ground"><static>true</static><link name="l"><collision name="c"><geometry><plane><normal>0 0 1</normal><size>200.0 200.0</size></plane></geometry></collision><visual name="v"><geometry><plane><normal>0 0 1</normal><size>200.0 200.0</size></plane></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_road.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual></link></model>
+    <model name="b-75_-75_0"><static>true</static><pose>-84.20 -87.20 8.79 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>20.59545283528363 14.60700100351556 17.582818151973186</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>20.59545283528363 14.60700100351556 17.582818151973186</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_-75_1"><static>true</static><pose>-84.20 -65.70 16.15 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>20.59545283528363 20.39299899648444 32.29151649551706</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>20.59545283528363 20.39299899648444 32.29151649551706</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_-75_2"><static>true</static><pose>-62.70 -86.32 8.52 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>14.40454716471637 16.35920964940497 17.045946109992595</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>14.40454716471637 16.35920964940497 17.045946109992595</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_-75_3"><static>true</static><pose>-62.70 -64.82 8.13 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>14.40454716471637 18.64079035059503 16.262658534061014</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>14.40454716471637 18.64079035059503 16.262658534061014</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_-25_0"><static>true</static><pose>-84.37 -34.65 12.64 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>20.257980979121545 19.707807182985295 25.27217433609504</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>20.257980979121545 19.707807182985295 25.27217433609504</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_-25_1"><static>true</static><pose>-84.37 -13.15 10.96 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>20.257980979121545 15.292192817014705 21.925244413817925</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>20.257980979121545 15.292192817014705 21.925244413817925</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac2.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_-25_2"><static>true</static><pose>-62.87 -38.15 4.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>14.742019020878455 12.708414496820389 8</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>14.742019020878455 12.708414496820389 8</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_-25_3"><static>true</static><pose>-62.87 -16.65 3.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>14.742019020878455 22.29158550317961 6</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>14.742019020878455 22.29158550317961 6</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_25_0"><static>true</static><pose>-83.78 15.63 7.77 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>21.436759340846784 20.2633429162387 15.542597405354662</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>21.436759340846784 20.2633429162387 15.542597405354662</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_25_1"><static>true</static><pose>-83.78 37.13 10.60 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>21.436759340846784 14.736657083761303 21.19923928588926</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>21.436759340846784 14.736657083761303 21.19923928588926</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_25_2"><static>true</static><pose>-62.28 11.63 15.94 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>13.563240659153214 12.255811291134394 31.87718218340364</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>13.563240659153214 12.255811291134394 31.87718218340364</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_25_3"><static>true</static><pose>-62.28 33.13 4.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>13.563240659153214 22.744188708865607 8</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>13.563240659153214 22.744188708865607 8</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac2.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_75_0"><static>true</static><pose>-85.47 64.49 10.56 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>18.069290935941083 17.983403283643888 21.124725656887904</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>18.069290935941083 17.983403283643888 21.124725656887904</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_75_1"><static>true</static><pose>-85.47 85.99 8.03 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>18.069290935941083 17.016596716356112 16.052678877549152</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>18.069290935941083 17.016596716356112 16.052678877549152</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_75_2"><static>true</static><pose>-63.97 64.87 2.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>16.930709064058917 18.738227535536595 4</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>16.930709064058917 18.738227535536595 4</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-75_75_3"><static>true</static><pose>-63.97 86.37 13.21 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>16.930709064058917 16.261772464463405 26.41648472474072</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>16.930709064058917 16.261772464463405 26.41648472474072</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_-75_0"><static>true</static><pose>-25.00 -87.97 2.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>39.0 13.062693406054708 4</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>39.0 13.062693406054708 4</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_-75_1"><static>true</static><pose>-25.00 -66.47 16.54 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>39.0 21.937306593945294 33.077060995504425</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>39.0 21.937306593945294 33.077060995504425</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_-25_0"><static>true</static><pose>-35.60 -37.34 15.32 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>17.794887269344997 14.326020823373135 30.63158246684165</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>17.794887269344997 14.326020823373135 30.63158246684165</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_-25_1"><static>true</static><pose>-35.60 -15.84 10.63 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>17.794887269344997 20.673979176626865 21.264077665778878</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>17.794887269344997 20.673979176626865 21.264077665778878</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac2.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_-25_2"><static>true</static><pose>-14.10 -25.00 4.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>17.205112730655003 39.0 8</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>17.205112730655003 39.0 8</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_25_0"><static>true</static><pose>-34.97 12.71 2.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>19.061768084937675 14.416427464742275 4</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>19.061768084937675 14.416427464742275 4</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac2.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_25_1"><static>true</static><pose>-34.97 34.21 5.78 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>19.061768084937675 20.583572535257726 11.554811392092613</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>19.061768084937675 20.583572535257726 11.554811392092613</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_25_2"><static>true</static><pose>-13.47 11.95 7.73 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>15.938231915062325 12.905611518502216 15.469338976821685</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>15.938231915062325 12.905611518502216 15.469338976821685</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_25_3"><static>true</static><pose>-13.47 33.45 4.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>15.938231915062325 22.094388481497784 8</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>15.938231915062325 22.094388481497784 8</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_75_0"><static>true</static><pose>-35.29 63.47 2.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>18.41143537637849 15.94167928402225 4</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>18.41143537637849 15.94167928402225 4</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_75_1"><static>true</static><pose>-35.29 84.97 14.09 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>18.41143537637849 19.05832071597775 28.178880736370868</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>18.41143537637849 19.05832071597775 28.178880736370868</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_75_2"><static>true</static><pose>-13.79 61.47 5.28 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>16.58856462362151 11.93670445133783 10.56956439171646</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>16.58856462362151 11.93670445133783 10.56956439171646</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b-25_75_3"><static>true</static><pose>-13.79 82.97 15.45 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>16.58856462362151 23.06329554866217 30.897566389277557</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>16.58856462362151 23.06329554866217 30.897566389277557</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b25_-75_0"><static>true</static><pose>25.00 -86.65 4.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>39.0 15.703527608758385 8</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>39.0 15.703527608758385 8</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b25_-75_1"><static>true</static><pose>25.00 -65.15 2.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>39.0 19.296472391241615 4</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>39.0 19.296472391241615 4</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b25_-25_0"><static>true</static><pose>25.00 -34.36 16.48 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>39.0 20.279179674704327 32.962051549883284</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>39.0 20.279179674704327 32.962051549883284</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b25_-25_1"><static>true</static><pose>25.00 -12.86 7.54 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>39.0 14.720820325295673 15.08536714437397</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>39.0 14.720820325295673 15.08536714437397</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b25_25_0"><static>true</static><pose>12.20 25.00 13.32 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>13.398503557928615 39.0 26.640145550448352</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>13.398503557928615 39.0 26.640145550448352</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b25_25_1"><static>true</static><pose>33.70 11.95 10.12 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>21.601496442071387 12.90655412645263 20.247634891438864</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>21.601496442071387 12.90655412645263 20.247634891438864</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac2.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b25_25_2"><static>true</static><pose>33.70 33.45 9.86 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>21.601496442071387 22.09344587354737 19.716056070786188</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>21.601496442071387 22.09344587354737 19.716056070786188</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac2.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b25_75_0"><static>true</static><pose>25.00 64.00 4.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>39.0 16.99545044376621 8</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>39.0 16.99545044376621 8</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b25_75_1"><static>true</static><pose>25.00 85.50 6.69 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>39.0 18.00454955623379 13.370940171206444</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>39.0 18.00454955623379 13.370940171206444</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_-75_0"><static>true</static><pose>62.98 -83.07 9.85 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>14.9545349782768 22.862870027894694 19.70043088281264</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>14.9545349782768 22.862870027894694 19.70043088281264</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_-75_1"><static>true</static><pose>62.98 -61.57 6.01 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>14.9545349782768 12.137129972105306 12.018077671811769</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>14.9545349782768 12.137129972105306 12.018077671811769</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_-75_2"><static>true</static><pose>84.48 -85.02 7.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>20.0454650217232 18.952922147424008 14.001994475613527</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>20.0454650217232 18.952922147424008 14.001994475613527</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_-75_3"><static>true</static><pose>84.48 -63.52 9.73 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>20.0454650217232 16.047077852575992 19.46620175807736</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>20.0454650217232 16.047077852575992 19.46620175807736</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_-25_0"><static>true</static><pose>75.00 -35.35 13.86 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>39.0 18.3096681015098 27.725150854658274</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>39.0 18.3096681015098 27.725150854658274</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_-25_1"><static>true</static><pose>75.00 -13.85 8.24 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>39.0 16.6903318984902 16.48067308618057</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>39.0 16.6903318984902 16.48067308618057</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_25_0"><static>true</static><pose>66.56 14.87 3.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>22.119346095973157 18.7477286537425 6</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>22.119346095973157 18.7477286537425 6</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac2.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_25_1"><static>true</static><pose>66.56 36.37 5.62 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>22.119346095973157 16.2522713462575 11.246424915091293</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>22.119346095973157 16.2522713462575 11.246424915091293</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac3.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_25_2"><static>true</static><pose>88.06 25.00 4.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>12.880653904026843 39.0 8</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>12.880653904026843 39.0 8</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_75_0"><static>true</static><pose>62.03 75.00 2.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>13.066261022104753 39.0 4</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>13.066261022104753 39.0 4</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_75_1"><static>true</static><pose>83.53 63.75 13.45 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>21.933738977895246 16.509820906774145 26.894047433202335</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>21.933738977895246 16.509820906774145 26.894047433202335</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac0.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="b75_75_2"><static>true</static><pose>83.53 85.25 4.00 0 0 0</pose>
+      <link name="l">
+        <collision name="c"><geometry><box><size>21.933738977895246 18.490179093225855 8</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>21.933738977895246 18.490179093225855 8</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>A:\SlamProject\worlds/tex_fac1.png</albedo_map><roughness>1</roughness><metalness>0</metalness></metal></pbr></material></visual>
+      </link></model>
+    <model name="robot">
+      <pose>0 -85 0.15 0 0 1.5708</pose>
+      <link name="base">
+        <inertial><mass>20</mass><inertia><ixx>0.5</ixx><iyy>0.8</iyy><izz>1</izz></inertia></inertial>
+        <collision name="c"><geometry><box><size>0.6 0.4 0.2</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.6 0.4 0.2</size></box></geometry>
+          <material><diffuse>0.2 0.2 0.8 1</diffuse></material></visual>
+        <collision name="caster"><pose>-0.25 0 -0.1 0 0 0</pose>
+          <geometry><sphere><radius>0.05</radius></sphere></geometry>
+          <surface><friction><ode><mu>0</mu><mu2>0</mu2></ode></friction></surface></collision>
+        <sensor name="lidar" type="gpu_lidar">
+          <pose>0 0 0.35 0 0 0</pose>
+          <topic>lidar</topic><update_rate>10</update_rate><always_on>true</always_on>
+          <lidar>
+            <scan>
+              <horizontal><samples>1024</samples><min_angle>-3.14159</min_angle><max_angle>3.14159</max_angle></horizontal>
+              <vertical><samples>32</samples><min_angle>-0.5</min_angle><max_angle>0.5</max_angle></vertical>
+            </scan>
+            <range><min>0.3</min><max>40</max></range>
+            <noise><type>gaussian</type><mean>0</mean><stddev>0.01</stddev></noise>
+          </lidar>
+        </sensor>
+        <sensor name="imu" type="imu">
+          <pose>0 0 0.2 0 0 0</pose>
+          <topic>imu</topic><update_rate>200</update_rate><always_on>true</always_on>
+        </sensor>
+        <sensor name="cam" type="camera">
+          <pose>0.3 0 0.3 0 0 0</pose>
+          <topic>camera</topic><update_rate>10</update_rate><always_on>true</always_on>
+          <camera>
+            <horizontal_fov>1.2</horizontal_fov>
+            <image><width>640</width><height>480</height></image>
+            <clip><near>0.1</near><far>100</far></clip>
+          </camera>
+        </sensor>
+      </link>
+      <link name="lwheel"><pose relative_to="base">0 0.25 0 -1.5708 0 0</pose>
+        <inertial><mass>1</mass><inertia><ixx>0.01</ixx><iyy>0.01</iyy><izz>0.01</izz></inertia></inertial>
+        <collision name="c"><geometry><cylinder><radius>0.15</radius><length>0.05</length></cylinder></geometry></collision>
+        <visual name="v"><geometry><cylinder><radius>0.15</radius><length>0.05</length></cylinder></geometry></visual></link>
+      <link name="rwheel"><pose relative_to="base">0 -0.25 0 -1.5708 0 0</pose>
+        <inertial><mass>1</mass><inertia><ixx>0.01</ixx><iyy>0.01</iyy><izz>0.01</izz></inertia></inertial>
+        <collision name="c"><geometry><cylinder><radius>0.15</radius><length>0.05</length></cylinder></geometry></collision>
+        <visual name="v"><geometry><cylinder><radius>0.15</radius><length>0.05</length></cylinder></geometry></visual></link>
+      <joint name="lj" type="revolute"><parent>base</parent><child>lwheel</child>
+        <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis></joint>
+      <joint name="rj" type="revolute"><parent>base</parent><child>rwheel</child>
+        <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis></joint>
+      <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+        <left_joint>lj</left_joint><right_joint>rj</right_joint>
+        <wheel_separation>0.5</wheel_separation><wheel_radius>0.15</wheel_radius>
+        <topic>cmd_vel</topic>
+      </plugin>
+      <!-- ground truth pose of every link, world frame -->
+      <plugin filename="gz-sim-pose-publisher-system" name="gz::sim::systems::PosePublisher">
+        <publish_link_pose>true</publish_link_pose><publish_sensor_pose>true</publish_sensor_pose>
+        <use_pose_vector_msg>true</use_pose_vector_msg><static_publisher>false</static_publisher>
+      </plugin>
+    </model>
+
+    <model name="drone">
+      <pose>-90 -90 40 0 0 0</pose>
+      <link name="base"><gravity>false</gravity>
+        <inertial><mass>2</mass><inertia><ixx>0.05</ixx><iyy>0.05</iyy><izz>0.05</izz></inertia></inertial>
+        <visual name="v"><geometry><box><size>0.5 0.5 0.15</size></box></geometry><material><diffuse>0.9 0.2 0.2 1</diffuse></material></visual>
+        <sensor name="lidar" type="gpu_lidar"><pose>0 0 -0.1 0 0 0</pose>
+          <topic>drone/lidar</topic><update_rate>10</update_rate><always_on>true</always_on>
+          <lidar><scan>
+            <horizontal><samples>1024</samples><min_angle>-3.14159</min_angle><max_angle>3.14159</max_angle></horizontal>
+            <vertical><samples>64</samples><min_angle>-1.4</min_angle><max_angle>0.2</max_angle></vertical></scan>
+            <range><min>0.5</min><max>100</max></range>
+            <noise><type>gaussian</type><mean>0</mean><stddev>0.02</stddev></noise></lidar></sensor>
+        <sensor name="imu" type="imu"><pose>0 0 0 0 0 0</pose><topic>drone/imu</topic><update_rate>200</update_rate><always_on>true</always_on></sensor>
+        <sensor name="cam" type="camera"><pose>0.2 0 -0.1 0 0.7 0</pose>
+          <topic>drone/camera</topic><update_rate>10</update_rate><always_on>true</always_on>
+          <camera><horizontal_fov>1.2</horizontal_fov><image><width>640</width><height>480</height></image>
+            <clip><near>0.1</near><far>300</far></clip></camera></sensor>
+      </link>
+      <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl"/>
+      <plugin filename="gz-sim-pose-publisher-system" name="gz::sim::systems::PosePublisher">
+        <publish_link_pose>true</publish_link_pose><publish_sensor_pose>true</publish_sensor_pose>
+        <use_pose_vector_msg>true</use_pose_vector_msg><static_publisher>false</static_publisher>
+      </plugin>
+    </model>
+  </world>
+</sdf>

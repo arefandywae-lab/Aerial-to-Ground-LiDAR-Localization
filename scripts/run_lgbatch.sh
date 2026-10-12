@@ -1,0 +1,6 @@
+#!/bin/bash
+# LightGlue fp16 vs fp32, DISK+LightGlue prior mode on route 2 (reference fp32: 91.2 / 39.3 % / 0.57 m / 859 ms)
+cd /mnt/a/SlamProject/vps
+export M1_MAP=/root/data/map_ud0_f2.npz M1_ZFAR=120 M1_SPLAT=0.12 M1_RMAX=4 M1_VIEWS=/root/data/views_ud0.npy M1LF_RETR=megaloc M1LF_COARSE=0 M1LF_FP16=0 M1LF_MATCHER=disklg M1LF_K=50 PRIOR_SIGMA=5 M1LF_PRIOR_R=20 M1LF_LGBATCH=${B:-25}
+python3 harness.py --method m1lf --map /root/data/ud0_img --queries /root/data/ug2s_img --out ../results/urban/disklg_ug2s_prior_b${B:-25}.json --seed 0 2>&1 |recall|median_t|latency_ms_p50|gate40|Error" | tr -d ' \n'; echo
+echo 1 > /proc/sys/vm/drop_caches

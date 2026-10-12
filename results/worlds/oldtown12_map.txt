@@ -1,0 +1,3 @@
+/root/data/w_oldtown12/map.npz: 1872330 pts, extent [-100.1 -100.3   -0.7]..[116.2 114.8  20.6], seen-by-camera 74%
+unseen before 25.9%, after class-aware fill 2.8% (radius 1.0 m, k 16, |cos| > 0.8)
+273 positions x 8 yaws = 2184 views (spacing 6.0 m, camera height 0.44 m)

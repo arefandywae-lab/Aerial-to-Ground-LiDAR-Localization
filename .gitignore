@@ -1,0 +1,28 @@
+# logs and scratch (they carry timestamps and machine details)
+*.log
+scripts/*.log
+__pycache__/
+*.pyc
+
+# third-party papers and their text extractions (copyright)
+docs/papers/
+docs/papers_txt/
+*.pdf
+
+# large generated data
+*.mcap
+*.bag
+*.db3
+*.pcd
+*.npz
+data/
+results/**/*.npz
+
+# editor / os
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# personal notes (not for the repository)
+docs/cv.md
